@@ -36,4 +36,11 @@ export default function bookApp(
     default:
       return state;
   }
+
+  const rootReducer = combineReducers({
+    authors: authorsReducer,
+    books: booksReducer
+  });
+  
+  export default rootReducer;
 }
